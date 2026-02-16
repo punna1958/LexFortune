@@ -13,7 +13,7 @@ function Footer() {
             <p className="footer-location">SC-094, Jaipuria Sunrise Plaza, Ahinsa Khand 1, Ghaziabad, UP</p>
           </div>
           <div className="footer-links">
-            <h4>Quick Links</h4>
+            <h2 className="footer-heading">Quick Links</h2>
             <Link to="/">Home</Link>
             <Link to="/about">About Us</Link>
             <Link to="/services">Services</Link>

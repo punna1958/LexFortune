@@ -27,45 +27,45 @@ function Services() {
 
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero" aria-labelledby="services-heading">
         <div className="container">
-          <h1>Our Services</h1>
+          <h1 id="services-heading">Our Services</h1>
           <p>Legal and financial solutions tailored to your needs</p>
         </div>
       </section>
 
-      <section className="section" id="legal">
+      <section className="section" id="legal" aria-labelledby="legal-services">
         <div className="container">
-          <h2 className="section-title">Legal Services</h2>
+          <h2 id="legal-services" className="section-title">Legal Services</h2>
           <p className="section-intro">
             Our legal team includes advocates and former senior investigation officers of Uttar Pradesh Police, 
             bringing practical investigative insight to your legal matters.
           </p>
-          <div className="services-list">
+          <ul className="services-list" aria-label="Legal services list">
             {legalServices.map((service) => (
-              <div key={service.name} className="service-item">
+              <li key={service.name} className="service-item">
                 <h3>{service.name}</h3>
                 <p>{service.desc}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
-      <section className="section section-gray" id="financial">
+      <section className="section section-gray" id="financial" aria-labelledby="financial-advisory">
         <div className="container">
-          <h2 className="section-title">Financial Advisory</h2>
+          <h2 id="financial-advisory" className="section-title">Financial Advisory</h2>
           <p className="section-intro">
             Tax, compliance and registration services handled by qualified Chartered Accountants.
           </p>
-          <div className="services-list">
+          <ul className="services-list" aria-label="Financial services list">
             {financialServices.map((service) => (
-              <div key={service.name} className="service-item">
+              <li key={service.name} className="service-item">
                 <h3>{service.name}</h3>
                 <p>{service.desc}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
