@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID
 
@@ -40,7 +41,7 @@ function ContactUs() {
       <section className="page-hero" aria-labelledby="contact-heading">
         <div className="container">
           <h1 id="contact-heading">Contact Us</h1>
-          <p>Get in touch for a consultation</p>
+          <p>Get in touch for a consultation. <Link to="/services">View our legal and tax services</Link>.</p>
         </div>
       </section>
 

@@ -19,14 +19,17 @@ function AboutUs() {
             <div className="about-text">
               <h2 id="who-we-are">Who We Are</h2>
               <p>
-                Lexfortune Advisory Services is a Ghaziabad-based firm offering integrated legal and financial advisory. 
+                Lexfortune Advisory Services is a Ghaziabad-based firm offering integrated <Link to="/services">legal and financial advisory</Link>.
                 We bring together expertise from diverse backgrounds to serve our clients with comprehensive solutions.
               </p>
               <p>
-                Our team is led by <strong>senior and top investigation officers of Uttar Pradesh Police</strong>, 
-                working alongside qualified <strong>Chartered Accountants</strong> and <strong>Advocates</strong>. 
-                This unique combination gives us deep insight into both investigative and regulatory matters, 
+                Our team is led by <strong>senior and top investigation officers of Uttar Pradesh Police</strong>,
+                working alongside qualified <strong>Chartered Accountants</strong> and <strong>Advocates</strong>.
+                This unique combination gives us deep insight into both investigative and regulatory matters,
                 as well as the financial and legal frameworks that govern them.
+              </p>
+              <p>
+                <Link to="/services">Explore our services</Link> or <Link to="/contact">contact us</Link> for a consultation.
               </p>
             </div>
           </div>
@@ -38,7 +41,7 @@ function AboutUs() {
           <h2 id="our-values" className="section-title">Our Values</h2>
           <div className="values-grid" role="list">
             <article className="value-item" role="listitem">
-<h3>Integrity</h3>
+              <h3>Integrity</h3>
                 <p>We uphold the highest standards of honesty and transparency in all our dealings.</p>
               </article>
               <article className="value-item" role="listitem">

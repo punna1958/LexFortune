@@ -38,8 +38,8 @@ function Services() {
         <div className="container">
           <h2 id="legal-services" className="section-title">Legal Services</h2>
           <p className="section-intro">
-            Our legal team includes advocates and former senior investigation officers of Uttar Pradesh Police, 
-            bringing practical investigative insight to your legal matters.
+            Our legal team includes advocates and former senior retired investigation officers of Police,
+            bringing practical investigative insight to your legal matters. <Link to="/about">Learn about our team</Link>.
           </p>
           <ul className="services-list" aria-label="Legal services list">
             {legalServices.map((service) => (
@@ -71,7 +71,7 @@ function Services() {
 
       <section className="section">
         <div className="container text-center">
-          <p>Need something specific? We can help. Get in touch to discuss your requirements.</p>
+          <p>Need something specific? We can help. <Link to="/contact">Get in touch</Link> to discuss your requirements.</p>
           <Link to="/contact" className="btn btn-primary">Contact Us</Link>
         </div>
       </section>
