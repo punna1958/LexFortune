@@ -38,10 +38,10 @@ function AboutUs() {
           <h2 id="our-values" className="section-title">Our Values</h2>
           <div className="values-grid" role="list">
             <article className="value-item" role="listitem">
-              <h3>Integrity</h3>
-              <p>We uphold the highest standards of honesty and transparency in all our dealings.</p>
-            </div>
-            <article className="value-item" role="listitem">
+<h3>Integrity</h3>
+                <p>We uphold the highest standards of honesty and transparency in all our dealings.</p>
+              </article>
+              <article className="value-item" role="listitem">
               <h3>Expertise</h3>
               <p>Our team's combined experience in law enforcement, law and finance sets us apart.</p>
             </article>
