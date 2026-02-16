@@ -20,16 +20,19 @@ function Header() {
         </Link>
 
         <button
+          type="button"
           className="menu-btn"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          aria-controls="main-nav"
         >
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
+        <nav id="main-nav" className={`nav ${menuOpen ? 'nav-open' : ''}`} aria-label="Main navigation">
           {navLinks.map((link) => (
             <Link
               key={link.path}

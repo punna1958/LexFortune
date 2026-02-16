@@ -37,24 +37,24 @@ function ContactUs() {
 
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero" aria-labelledby="contact-heading">
         <div className="container">
-          <h1>Contact Us</h1>
+          <h1 id="contact-heading">Contact Us</h1>
           <p>Get in touch for a consultation</p>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" aria-labelledby="reach-out">
         <div className="container">
           <div className="contact-grid">
-            <div className="contact-info">
-              <h2>Reach Out</h2>
+            <address className="contact-info">
+              <h2 id="reach-out">Reach Out</h2>
               <div className="contact-item">
-                <h4>Email</h4>
+                <h3>Email</h3>
                 <a href="mailto:contact@lexfortune.in">contact@lexfortune.in</a>
               </div>
               <div className="contact-item">
-                <h4>Phone</h4>
+                <h3>Phone</h3>
                 <div className="contact-phones">
                   <a href="tel:+919456661555">+91 9456661555</a>
                   <a href="tel:+919719168574">+91 9719168574</a>
@@ -62,13 +62,13 @@ function ContactUs() {
                 </div>
               </div>
               <div className="contact-item">
-                <h4>Address</h4>
+                <h3>Address</h3>
                 <p>SC-094, Jaipuria Sunrise Plaza, Ahinsa Khand 1, Ghaziabad, UP</p>
               </div>
-            </div>
+            </address>
             <div className="contact-form-wrap">
-              <h2>Send a Message</h2>
-              <form onSubmit={handleSubmit} className="contact-form">
+              <h2 id="send-message">Send a Message</h2>
+              <form onSubmit={handleSubmit} className="contact-form" aria-labelledby="send-message" noValidate>
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
                   <input
@@ -112,11 +112,11 @@ function ContactUs() {
                     required
                   ></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary" disabled={status === 'sending'}>
+                <button type="submit" className="btn btn-primary" disabled={status === 'sending'} aria-busy={status === 'sending'}>
                   {status === 'sending' ? 'Sending...' : 'Send Message'}
                 </button>
-                {status === 'success' && <p className="form-success">Thank you. We'll get back to you soon.</p>}
-                {status === 'error' && <p className="form-error">Something went wrong. Please try again or call us.</p>}
+                {status === 'success' && <p id="form-status" className="form-success" role="status">Thank you. We'll get back to you soon.</p>}
+                {status === 'error' && <p id="form-status" className="form-error" role="alert">Something went wrong. Please try again or call us.</p>}
               </form>
             </div>
           </div>
