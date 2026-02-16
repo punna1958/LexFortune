@@ -1,22 +1,29 @@
-import { useEffect } from 'react'
+import { Helmet } from 'react-helmet-async'
 import { useLocation } from 'react-router-dom'
+
+const SITE_URL = 'https://lexfortune.in'
+const OG_IMAGE = `${SITE_URL}/lexfortunelogo.jpeg`
 
 const ROUTES = {
   '/': {
     title: 'Lexfortune Advisory Services | Legal & Financial Advisory - Ghaziabad',
-    description: 'Lexfortune Advisory Services - Legal and Financial advisory firm in Ghaziabad. Civil, Criminal, Family law, Tax, GST, ITR and more.',
+    description: 'Legal advisor Ghaziabad: Criminal lawyer, bail help, family lawyer, GST filing, ITR consultant, tax consultant. Led by senior UP Police officers, CAs & Advocates.',
+    canonical: SITE_URL + '/',
   },
   '/about': {
     title: 'About Us | Lexfortune Advisory Services - Ghaziabad',
-    description: 'Your trusted partners in legal and financial matters. Led by senior UP Police investigation officers, CAs and Advocates in Ghaziabad.',
+    description: 'Your trusted legal and financial partners in Ghaziabad. Senior UP Police investigation officers, CAs and Advocates. Criminal lawyer, bail help, GST & ITR expertise.',
+    canonical: SITE_URL + '/about',
   },
   '/services': {
     title: 'Our Services | Legal & Tax Advisory | Lexfortune - Ghaziabad',
-    description: 'Legal services: Civil, Family, Criminal, Litigation. Financial: Tax, GST, ITR, compliances, registrations. Expert advisory in Ghaziabad.',
+    description: 'Legal: Criminal lawyer, bail, family lawyer, civil & litigation. Financial: GST filing, ITR consultant, tax consultant, compliances. Ghaziabad & UP.',
+    canonical: SITE_URL + '/services',
   },
   '/contact': {
     title: 'Contact Us | Lexfortune Advisory Services - Ghaziabad',
-    description: 'Get in touch for legal and financial consultation. Visit us at Jaipuria Sunrise Plaza, Ahinsa Khand 1, Ghaziabad or call us.',
+    description: 'Contact Lexfortune for legal and financial consultation. Ghaziabad office: Jaipuria Sunrise Plaza, Ahinsa Khand 1. Call or visit for bail, GST, ITR, family law.',
+    canonical: SITE_URL + '/contact',
   },
 }
 
@@ -24,13 +31,24 @@ function SEO() {
   const { pathname } = useLocation()
   const meta = ROUTES[pathname] || ROUTES['/']
 
-  useEffect(() => {
-    document.title = meta.title
-    const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', meta.description)
-  }, [pathname])
-
-  return null
+  return (
+    <Helmet>
+      <title>{meta.title}</title>
+      <meta name="description" content={meta.description} />
+      <link rel="canonical" href={meta.canonical} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={meta.canonical} />
+      <meta property="og:title" content={meta.title} />
+      <meta property="og:description" content={meta.description} />
+      <meta property="og:image" content={OG_IMAGE} />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:site_name" content="Lexfortune" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={meta.title} />
+      <meta name="twitter:description" content={meta.description} />
+      <meta name="twitter:image" content={OG_IMAGE} />
+    </Helmet>
+  )
 }
 
 export default SEO
