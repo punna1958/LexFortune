@@ -6,7 +6,7 @@ function AboutUs() {
       <section className="page-hero" aria-labelledby="about-heading">
         <div className="container">
           <h1 id="about-heading">About Us</h1>
-          <p>Your trusted partners in legal and financial matters</p>
+          <p>Former police investigation officers, CAs and Advocates—courts, tribunals and fund recovery</p>
         </div>
       </section>
 
@@ -19,14 +19,13 @@ function AboutUs() {
             <div className="about-text">
               <h2 id="who-we-are">Who We Are</h2>
               <p>
-                Lexfortune Advisory Services is a Ghaziabad-based firm offering integrated <Link to="/services">legal and financial advisory</Link>.
-                We bring together expertise from diverse backgrounds to serve our clients with comprehensive solutions.
+                Lexfortune is a professional <Link to="/services">legal and financial advisory</Link> platform led by senior former police investigation officers and supported by a team of experienced Advocates and Chartered Accountants. The organization focuses on delivering practical, result-oriented solutions across criminal, civil, financial, and regulatory matters.
               </p>
               <p>
-                Our team is led by <strong>senior and top investigation officers of Uttar Pradesh Police</strong>,
-                working alongside qualified <strong>Chartered Accountants</strong> and <strong>Advocates</strong>.
-                This unique combination gives us deep insight into both investigative and regulatory matters,
-                as well as the financial and legal frameworks that govern them.
+                With extensive experience representing clients before District Courts, High Courts, the Supreme Court of India, and various tribunals and authorities, our team works with a clear objective—protecting the legal and financial interests of our clients.
+              </p>
+              <p>
+                Operating from our registered center in Ghaziabad, Lexfortune provides comprehensive legal consultation, cyber fraud recovery assistance, financial advisory, property dealing support, insurance guidance, and investment-related services through both offline and online channels.
               </p>
               <p>
                 <Link to="/services">Explore our services</Link> or <Link to="/contact">contact us</Link> for a consultation.

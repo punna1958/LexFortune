@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import Logo from './Logo'
 
 const navLinks = [
   { path: '/', label: 'Home' },
@@ -15,9 +16,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <Link to="/" className="logo-wrap" onClick={() => setMenuOpen(false)}>
-          <img src="/lexfortunelogo.jpeg" alt="Lexfortune Advisory Services" className="logo" />
-        </Link>
+        <Logo className="header-logo" tagline={true} onClick={() => setMenuOpen(false)} />
 
         <button
           type="button"

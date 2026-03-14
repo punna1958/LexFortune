@@ -30,7 +30,7 @@ function Services() {
       <section className="page-hero" aria-labelledby="services-heading">
         <div className="container">
           <h1 id="services-heading">Our Services</h1>
-          <p>Legal and financial solutions tailored to your needs</p>
+          <p>From bail and litigation to GST and fund recovery—under one roof</p>
         </div>
       </section>
 
@@ -38,8 +38,8 @@ function Services() {
         <div className="container">
           <h2 id="legal-services" className="section-title">Legal Services</h2>
           <p className="section-intro">
-            Our legal team includes advocates and former senior retired investigation officers of Police,
-            bringing practical investigative insight to your legal matters. <Link to="/about">Learn about our team</Link>.
+            Our legal team includes advocates and former senior investigation officers of Police,
+            bringing practical investigative insight to your legal matters—including representation up to the Supreme Court and before tribunals. <Link to="/about">Learn about our team</Link>.
           </p>
           <ul className="services-list" aria-label="Legal services list">
             {legalServices.map((service) => (
@@ -56,7 +56,7 @@ function Services() {
         <div className="container">
           <h2 id="financial-advisory" className="section-title">Financial Advisory</h2>
           <p className="section-intro">
-            Tax, compliance and registration services handled by qualified Chartered Accountants.
+            Tax, compliance and registration services handled by qualified Chartered Accountants. Compliances and registrations taken care of so you stay on the right side of the law.
           </p>
           <ul className="services-list" aria-label="Financial services list">
             {financialServices.map((service) => (
@@ -71,7 +71,7 @@ function Services() {
 
       <section className="section">
         <div className="container text-center">
-          <p>Need something specific? We can help. <Link to="/contact">Get in touch</Link> to discuss your requirements.</p>
+          <p>Confidential discussion. Tell us your situation—we'll outline how we can help. <Link to="/contact">Get in touch</Link>.</p>
           <Link to="/contact" className="btn btn-primary">Contact Us</Link>
         </div>
       </section>

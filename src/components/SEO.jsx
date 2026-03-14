@@ -7,22 +7,22 @@ const OG_IMAGE = `${SITE_URL}/lexfortunelogo.jpeg`
 const ROUTES = {
   '/': {
     title: 'Lexfortune Advisory Services | Legal & Financial Advisory - Ghaziabad',
-    description: 'Legal advisor Ghaziabad: Criminal lawyer, bail help, family lawyer, GST filing, ITR consultant, tax consultant. Led by senior UP Police officers, CAs & Advocates.',
+    description: 'Former Senior Police investigation officers, Chartered Accountants and Advocates. Courts to Supreme Court, tribunals, cyber fraud & fund recovery. Legal and financial advisory from Ghaziabad.',
     canonical: SITE_URL + '/',
   },
   '/about': {
     title: 'About Us | Lexfortune Advisory Services - Ghaziabad',
-    description: 'Your trusted legal and financial partners in Ghaziabad. Senior UP Police investigation officers, CAs and Advocates. Criminal lawyer, bail help, GST & ITR expertise.',
+    description: 'Former police investigation officers, Chartered Accountants and Advocates. Strategic representation from courts to Supreme Court and tribunals. Legal and financial advisory, Ghaziabad.',
     canonical: SITE_URL + '/about',
   },
   '/services': {
     title: 'Our Services | Legal & Tax Advisory | Lexfortune - Ghaziabad',
-    description: 'Legal: Criminal lawyer, bail, family lawyer, civil & litigation. Financial: GST filing, ITR consultant, tax consultant, compliances. Ghaziabad & UP.',
+    description: 'Legal: bail, criminal, family, civil, litigation—courts to Supreme Court. Financial: GST, ITR, compliances, registrations. Cyber fraud & fund recovery. Ghaziabad & UP.',
     canonical: SITE_URL + '/services',
   },
   '/contact': {
     title: 'Contact Us | Lexfortune Advisory Services - Ghaziabad',
-    description: 'Contact Lexfortune for legal and financial consultation. Ghaziabad office: Jaipuria Sunrise Plaza, Ahinsa Khand 1. Call or visit for bail, GST, ITR, family law.',
+    description: 'Confidential consultation. Ghaziabad: Jaipuria Sunrise Plaza, Ahinsa Khand 1. Call or message for legal, tax, bail, GST, ITR, or fund recovery—we respond promptly.',
     canonical: SITE_URL + '/contact',
   },
 }

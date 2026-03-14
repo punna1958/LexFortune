@@ -41,7 +41,7 @@ function ContactUs() {
       <section className="page-hero" aria-labelledby="contact-heading">
         <div className="container">
           <h1 id="contact-heading">Contact Us</h1>
-          <p>Get in touch for a consultation. <Link to="/services">View our legal and tax services</Link>.</p>
+          <p>Confidential consultation. Call, visit or send a message—we'll respond promptly. <Link to="/services">View our legal and tax services</Link>.</p>
         </div>
       </section>
 
@@ -69,6 +69,7 @@ function ContactUs() {
             </address>
             <div className="contact-form-wrap">
               <h2 id="send-message">Send a Message</h2>
+              <p className="contact-form-intro">Your details are confidential. We typically respond within 24 hours.</p>
               <form onSubmit={handleSubmit} className="contact-form" aria-labelledby="send-message" noValidate>
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
