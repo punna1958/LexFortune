@@ -8,7 +8,7 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelmetProvider>
-      <BrowserRouter basename="/LexFortune">
+      <BrowserRouter basename={window.location.pathname.startsWith('/LexFortune') ? '/LexFortune' : '/'}>
         <App />
       </BrowserRouter>
     </HelmetProvider>
